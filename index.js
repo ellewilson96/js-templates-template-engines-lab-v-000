@@ -19,7 +19,7 @@ function postComment() {
   function createPost(){
 
     //create template functions (page, post, comments)
-    const pageTemplate = _.template(document.getElementById("page-template").innerHTML);
+    const pageTemplate = _.template(document.getElementById("page-template").innerHTML)
     const postTemplate = _.template(document.getElementById("post-template").innerHTML)
     const commentsTemplate = _.template(document.getElementById("comments-template").innerHTML)
      // grab raw data
@@ -42,4 +42,4 @@ function postComment() {
     postSection.innerHTML += postHTML;
     commentSection.innerHTML += commentsHTML;
 
-  } 
+  }
